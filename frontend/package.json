@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+"jest": {
+  "testEnvironment": "jest-fixed-jsdom",
+  "moduleFileExtensions": ["js", "mjs", "jsx", "ts", "tsx", "json", "node"],
+  "transform": {
+    "^.+\\.(js|jsx|mjs|ts|tsx)$": "babel-jest"
+  },
+  "transformIgnorePatterns": [],
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "<rootDir>/src/__mocks__/styleMock.js"
+  },
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ]
+},
+  "dependencies": {
+    "@tanstack/react-query": "^5.101.2",
+    "axios": "^1.18.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-react": "^8.0.1",
+    "@eslint/js": "^10.0.1",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "babel-jest": "^30.4.1",
+    "eslint": "^10.6.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "msw": "^2.15.0",
+    "node-fetch": "^3.3.2",
+    "text-encoding": "^0.7.0",
+    "undici": "^8.8.0",
+    "vite": "^8.1.1",
+    "web-streams-polyfill": "^4.3.0",
+"jest-fixed-jsdom": "*",
+"@testing-library/user-event": "*" 
+ }
+}
